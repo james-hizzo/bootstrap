@@ -1,0 +1,38 @@
+.row {
+    margin-bottom: 20px;
+}
+
+#row-first {
+    background-color: aliceblue;
+}
+
+.col {
+    border: 1px solid gray;
+}
+
+.col img {
+    /* REPLACED width/height with img-fluid class - NICE 
+    width: 300px;
+    height: 210px;
+    */
+    
+}
+
+#row-second {
+    background-color: beige;
+}
+
+#row-second > .col-sm-3 {
+    border: 1px solid black;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn {
+    margin-top: auto;
+    align-self: flex-end;
+}

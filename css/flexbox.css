@@ -1,0 +1,40 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav,
+	.row,
+	.col {		/* adding .col to this makes it/them a flex container. makes page go crazy at first since items flow left to right */
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.col {
+        /* THIS is the rule needed to make the buttons stay at bottom - along with the one 
+        below but this IS needed on the bootstrap cards NOPE - it's not the flex 1 but the other one? what the fuck?*/
+        flex: 1;    
+        flex-direction: column; /* makes the items flow top to bottom using column */
+	}
+
+	.button {
+		margin-top: auto; /* WOW  this is the rule that makes the buttons align to bottom of column */
+		align-self: flex-start;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
